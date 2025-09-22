@@ -2,16 +2,15 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 20
     commands:
-      - echo "Installing dependencies..."
-      - npm install
+      - echo "No dependencies to install"
+
   build:
     commands:
-      - echo "Running build..."
-      - npm run build
+      - echo "Build phase running..."
+      - echo "Hello from CI/CD demo"
 
 artifacts:
   files:
     - '**/*'
+
